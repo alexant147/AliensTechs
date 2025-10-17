@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AliensTechs — Server Support · Transport · AI Infrastructure</title>
+  <meta name="description" content="AliensTechs provides server support, datacenter transportation, equipment maintenance and configuration, including specialized AI servers." />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="assets/logo.png" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="AliensTechs logo" class="logo">
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <img src="assets/logo.png" alt="AliensTechs logo" class="hero-logo" />
+        <h1>Datacenter & Server Experts</h1>
+        <p class="sub">Server support · Transportation · Maintenance & Configuration · <strong>Specialized AI servers</strong></p>
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>What We Do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Server Transport</h3>
+            <p>Secure pickup, packing, and delivery to/from datacenters. Chain‑of‑custody docs, labeled inventory, ESD‑safe handling.</p>
+          </article>
+          <article class="card">
+            <h3>Install & Cabling</h3>
+            <p>Rack & stack, power planning, structured cabling, labeling, and validation tests.</p>
+          </article>
+          <article class="card">
+            <h3>Hardware Support</h3>
+            <p>Diagnostics, part swaps, firmware/BIOS updates for Dell, HPE, Supermicro and more.</p>
+          </article>
+          <article class="card">
+            <h3>Configuration</h3>
+            <p>RAID/ZFS, IPMI/iLO/iDRAC, OS imaging, hypervisors (VMware/Proxmox/Nutanix), monitoring.</p>
+          </article>
+          <article class="card">
+            <h3>AI Servers</h3>
+            <p>GPU server assembly, burn‑in, thermal tuning, drivers & CUDA/cuDNN, network & storage throughput checks.</p>
+          </article>
+          <article class="card">
+            <h3>Hybrid Connectivity</h3>
+            <p>Site‑to‑site VPN, Direct Connect planning, VLANs, BGP, and secure handoffs to cloud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section alt">
+      <div class="container">
+        <h2>Why AliensTechs</h2>
+        <ul class="ticks">
+          <li>Experienced with enterprise gear and real datacenter constraints.</li>
+          <li>Checklists for every job — no surprises, no missing screws.</li>
+          <li>Documented handoff: photos, serials, topology notes.</li>
+          <li>Insured handling and ESD best‑practices.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Contact</h2>
+        <p>Tell us what you need moved or built and the timeline — we’ll reply with a scoped quote.</p>
+        <div class="contact-box">
+          <p><strong>Email:</strong> <a id="mailto" href="#">info [at] alienstechs [dot] com</a></p>
+          <p><strong>Phone:</strong> <span>+1 (555) 555‑5555</span></p>
+        </div>
+        <p class="tiny">Tip: Replace [at] with @ and [dot] with . — or edit this page later to add a contact form (Netlify Forms / Formspree / Airtable).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> AliensTechs · Servers · Transport · AI Infrastructure</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const m = 'info' + '@' + 'alienstechs.com';
+    const a = document.getElementById('mailto');
+    a.href = 'mailto:' + m;
+    a.textContent = m;
+  </script>
+</body>
+</html>
